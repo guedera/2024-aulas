@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.Titulo {
+    text-align: left; /* Alinha o título à esquerda */
+    width: 100%;
+    max-width: 1000px; /* Define uma largura máxima */
+    margin: 0 auto 1rem auto; /* Centraliza e ajusta margem inferior */
+}
+
+.container p {
+    margin-bottom: 1rem;
+}
+
+.seletorContainer img {
+    width: 100%; /* Ajusta dinamicamente ao tamanho do container */
+    max-width: 150px; /* Limite máximo para telas maiores */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Escala a imagem corretamente */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os elementos "quebrem" linha em telas menores */
+}
+
+.row div {
+    flex: 1 1 calc(50% - 20px); /* Metade da largura com espaçamento */
+    min-width: 150px; /* Define um limite mínimo */
+    max-width: 100%; /* Evita que os elementos ultrapassem a largura do container */
+}
+
+/* Para telas pequenas (largura menor que 500px) */
+@media (max-width: 500px) {
+    .row {
+        flex-direction: column; /* Exibe os elementos em coluna */
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    .row div {
+        flex: 1 1 100%; /* Cada elemento ocupa toda a largura */
+    }
+
+    .seletorContainer img {
+        max-width: 100px; /* Imagens menores para telas pequenas */
+    }
+}
+
+/* Para telas médias (largura entre 500px e 800px) */
+@media (min-width: 500px) and (max-width: 800px) {
+    .row div {
+        flex: 1 1 calc(50% - 10px); /* Dois itens por linha */
+    }
+
+    .seletorContainer img {
+        max-width: 120px; /* Ajusta o tamanho das imagens */
+    }
+}
+
+/* Para telas grandes (largura maior que 800px) */
+@media (min-width: 800px) {
+    .row div {
+        flex: 1 1 calc(33.33% - 20px); /* Três itens por linha */
+    }
+
+    .seletorContainer img {
+        max-width: 150px; /* Tamanho padrão das imagens */
+    }
+}
+
+/* Estilos para o botão "Salvar" ocupar a linha inteira */
+.space button {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    padding: 1rem; /* Ajusta o padding para um botão maior */
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    border-radius: 8px; /* Mantém bordas arredondadas */
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+/* Estilos para dispositivos com suporte a hover */
+@media (hover: hover) and (pointer: fine) {
+    .seletorContainer img {
+        transition: transform 0.3s ease; /* Efeito suave para hover */
+    }
+
+    .seletorContainer img:hover {
+        transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+    }
+}

@@ -1,0 +1,16 @@
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+.itemMenu {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 0 8px 0;
+}

@@ -1,0 +1,48 @@
+-- Elementos de Sistemas
+-- by Luciano Soares
+-- Register16.vhd
+
+Library ieee;
+use ieee.std_logic_1164.all;
+
+entity Register16 is
+	port(
+		clock:   in STD_LOGIC;
+		input:   in STD_LOGIC_VECTOR(15 downto 0);
+		load:    in STD_LOGIC;
+		output: out STD_LOGIC_VECTOR(15 downto 0)
+	);
+end entity;
+
+architecture arch of Register16 is
+
+	component Register8 is
+		port(
+			clock:   in STD_LOGIC;
+			input:   in STD_LOGIC_VECTOR(7 downto 0);
+			load:    in STD_LOGIC;
+			output: out STD_LOGIC_VECTOR(7 downto 0)
+		);
+	end component;
+
+begin
+
+	-- Instância para os 8 bits mais significativos
+	U1: Register8
+		port map (
+			clock => clock,
+			input => input(15 downto 8),  -- Parte mais significativa do vetor de entrada
+			load => load,
+			output => output(15 downto 8) -- Parte mais significativa da saída
+		);
+
+	-- Instância para os 8 bits menos significativos
+	U2: Register8
+		port map (
+			clock => clock,
+			input => input(7 downto 0),   -- Parte menos significativa do vetor de entrada
+			load => load,
+			output => output(7 downto 0)  -- Parte menos significativa da saída
+		);
+
+end architecture;

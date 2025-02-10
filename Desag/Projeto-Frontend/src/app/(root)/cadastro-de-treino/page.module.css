@@ -1,0 +1,81 @@
+.DateTime {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+    max-width: 1000px;
+}
+.backround{
+    background-color: white; 
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+}
+.Titulo {
+    text-align: left; /* Alinha o título à esquerda */
+    width: 100%;
+    max-width: 1000px; /* Define uma largura máxima */
+    margin: 0 auto 1rem auto; /* Centraliza e ajusta margem inferior */
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem 2rem 1rem; 
+}
+.spaceDD{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0rem 0.5rem 0rem; 
+}
+
+
+/* Blocos padrão (para largura de celular). */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-start;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.container p {
+    margin-bottom: 1rem;
+    color: #3a51c5;
+}
+ 
+
+/* Blocos específicos para largura de tablet. */
+
+@media (min-width: 500px) {
+}
+
+/* Blocos específicos para largura de desktop. */
+
+@media (min-width: 800px) {
+    .backround {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .space {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+/* Blocos específicos para dispositivos não-touch. */
+
+@media (hover: hover) and (pointer: fine) {
+}

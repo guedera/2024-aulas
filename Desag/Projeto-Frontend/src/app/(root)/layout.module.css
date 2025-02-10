@@ -1,0 +1,16 @@
+/* Blocos padrão (para largura de celular). */
+
+/* Blocos específicos para largura de tablet. */
+
+@media (min-width: 500px) {
+}
+
+/* Blocos específicos para largura de desktop. */
+
+@media (min-width: 800px) {
+}
+
+/* Blocos específicos para dispositivos não-touch. */
+
+@media (hover: hover) and (pointer: fine) {
+}

@@ -1,0 +1,32 @@
+{
+  "aluno-1": {
+    "nome": "Antonio Carlos Gomes dos Santos FIlho",
+    "email-insper": "antoniocgsf@al.insper.edu.br",
+    "user-github": "antoniocarlosgsf"
+  },
+  "aluno-2": {
+    "nome": "Enzo Santos Christofoletti",
+    "email-insper": "enzosc1@al.insper.edu.br",
+    "user-github": "enzochristo"
+  },
+  "aluno-3": {
+    "nome": "Guilherme Galvão Guedes",
+    "email-insper": "guilhermegg5@al.insper.edu.br",
+    "user-github": "guedera"
+  },
+  "aluno-4": {
+    "nome": "João Pedro Sardou de Oliveira",
+    "email-insper": "joaopso2@al.insper.edu.br",
+    "user-github": "jotasardou"
+  },
+  "aluno-5": {
+    "nome": "Jonathan",
+    "email-insper": "Jonthanasf@al.insper.edu.br",
+    "user-github": "Jonathanflesch"
+  },
+  "aluno-6": {
+    "nome": "Jorge Gyotoku Neto",
+    "email-insper": "jorgeg1@al.insper.edu.br",
+    "user-github": "Jorgeneto1112"
+  }
+}

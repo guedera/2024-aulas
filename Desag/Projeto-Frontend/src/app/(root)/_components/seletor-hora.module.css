@@ -1,0 +1,13 @@
+.seletorHora {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1.5px solid #3a51c5;
+    background-color: #f7f7f7;
+    padding: 13px 27px; 
+    font-size: 14px;
+    outline: none; 
+    box-shadow: none;
+    width: 100%; 
+ 
+}

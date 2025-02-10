@@ -1,0 +1,42 @@
+.icone_notificacao{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    width: 32px;
+    height: 32px;
+}
+
+.botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.numero{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    
+    font-size: 12px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    
+    margin-top: -0.5rem;
+    margin-right: -0.5rem;  
+}

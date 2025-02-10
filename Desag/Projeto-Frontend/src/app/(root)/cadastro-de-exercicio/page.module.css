@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.title {
+    font-size: 18px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    color: #42c5ec;
+}
+
+.container p {
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row div {
+    flex: 1;
+}
+
+/* Adicionando a media query para limitar a largura do contêiner */
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,11 @@
+.titulo {
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: -15px; /* Ajuste superior */
+    margin-bottom: 15px; /* Ajuste inferior */
+    text-align: left; /* Alinhamento à esquerda */
+    color: #5CC4FF; /* Cor azul (#5CC4FF) */
+    width: 100%; /* Largura completa do container pai */
+    line-height: 21.78px; /* Altura da linha para melhor legibilidade */
+    font-family: 'Inter', sans-serif; /* Fonte Inter */
+}

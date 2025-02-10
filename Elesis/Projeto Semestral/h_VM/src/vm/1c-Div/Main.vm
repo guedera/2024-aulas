@@ -1,0 +1,56 @@
+// ---------------------------------  
+// Rafael Corsi @ insper . edu . br
+//              2018a
+// ---------------------------------
+//
+// Descritivo   :
+//  Faça a divisão do valor de temp 0 por temp 1
+//  salve o resultado em temp 3
+//
+//  temp 3 = temp 0 / temp 1
+//
+//  assuma que temp 0> temp 1 e ambos inteiros
+// ----------------------------------
+
+function Main.main 0
+push temp 0 // pega o valor do temp 0 da pilha
+pop temp 3 // joga o valor do temp0 e joga no temp 3 para que seja possivel ao fazer as subtracoes ele ser atualizado temp -= divisor
+
+
+push constant 0 // salva o valor zero na pilha
+pop temp 2 // pega o valor da pilha e joga no temp 2 
+
+
+label loop
+// fazendo a divisao
+// basicamente é dividendo -= divisor, que é o temp 3
+push temp 3
+push temp 1
+sub
+
+pop temp 3
+push constant 0 // adiciona o 0 para fazer a condicao de ser maior que zero.
+
+// verifica a condicao de ser > 0 
+push temp 3
+eq // comparando o valor do ultimo valor com o penultimo, que é o resultado da subtração
+if-goto end
+
+// fazendo o contador(que é a resposta) ser notificado sobre a divisao
+push temp 2 
+push constant 1
+add 
+pop temp 2
+
+goto loop   
+label end
+
+push temp 2
+pop temp 3
+
+
+// esse loop sempre deve existir!
+// caso contrario o computador vai
+// executar lixo de memoria.
+label while
+  goto while

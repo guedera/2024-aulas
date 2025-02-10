@@ -1,0 +1,46 @@
+function pow 3
+// salvando  argument 1 - 1 no contador, que é o local 0 
+push argument 1
+push constant 1
+sub
+pop local 0 
+
+
+// expoente
+push argument 1 
+pop local 1
+
+
+// numero que sera elevado
+push argument 0 
+pop local 2
+
+// inicio do loop
+label loop
+
+// faz a multiplicacao
+push local 2
+push argument 0 // nao vale colocar sempre igual, pq apos a primeira vez o expoente muda.
+call mult 2 // chama a funcao da multiplicacao e passa o numero de parametros dela, que sao 2
+
+pop local 2 // salvando o resultado do elevado no local 2
+
+// confere o resultado do contador
+push local 0
+push local 1
+eq 
+if-goto endloop
+
+
+// somando 1 no contador
+push constant 1 
+push local 0 
+add
+
+pop local 0 // pega o contador+=1 e salva no local 0
+
+
+goto loop
+label endloop
+return 
+

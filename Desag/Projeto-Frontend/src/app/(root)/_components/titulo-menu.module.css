@@ -1,0 +1,10 @@
+/* titulo-menu.module.css */
+.titulo{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    margin-bottom: 15px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}

@@ -1,0 +1,19 @@
+.botaoSalvar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: not-allowed; /* Desabilitado por padrão */
+    background-color: #cccccc; /* Cinza por padrão */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botaoSalvar:disabled {
+    background-color: #cccccc; /* Mesma cor quando desabilitado */
+}
+
+.active {
+    cursor: pointer; /* Habilita o cursor */
+    background-color: #007bff; /* Azul para o botão ativo */
+}

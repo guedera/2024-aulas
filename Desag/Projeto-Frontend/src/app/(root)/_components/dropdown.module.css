@@ -1,0 +1,55 @@
+.selectContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  padding: 14px 10px; /* Espaço para a seta */
+  border: 1px solid #2E51CD;
+  border-radius: 8px;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+  line-height: 14.52px;
+
+  /* Remove a seta padrão */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/*
+.input:focus {
+  border-color: #42c5ec;
+}
+*/
+
+.selectContainer::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px; /* Ajuste conforme necessário */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent; /* Reduzir a largura da seta */
+  border-right: 6px solid transparent; /* Reduzir a largura da seta */
+  border-top: 10px solid #2E51CD; /* Cor da seta */
+  pointer-events: none; /* Permite clicar através da seta */
+
+}
+
+.label {
+  height: 15px;
+  line-height: 14.52px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #2E51CD;
+  display: block;
+  position: relative;
+  top: -6px;
+}
