@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1727439463" />
+    <testcase name="tb_jokenpo" classname="av2_cocotb" file="/home/guedes/Documents/insper/elesis/provaPI/ai-av2-guedera/av2_cocotb.py" lineno="7" time="0.0014662742614746094" sim_time_ns="18.000001" ratio_time="12276.012389317724" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,4 @@
+# nome | quantidade de testes | us de execucao
+
+roll.nasm 1 1000
+

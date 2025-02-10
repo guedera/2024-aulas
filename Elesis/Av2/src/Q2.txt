@@ -1,0 +1,3 @@
+Qual a saída para as próximas 5 bordas de subida, considerando que SW(0) esteja em '1' nas três primeiras bordas e em '0' nas duas últimas? 
+
+as saídas serão respectivamente "0000001", "0000010", "0000100", "0000100", "0000100"

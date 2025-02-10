@@ -1,0 +1,4 @@
+v 4
+file / "/home/guedes/Documents/insper/elesis/provaPI/ai-av2-guedera/src/jokenpo.vhd" "2e62e01b1c61b936163ccf18bbf4a7c85e6aeafb" "20240927122425.681":
+  entity jokenpo at 4( 22) + 0 on 11;
+  architecture rtl of jokenpo at 14( 206) + 0 on 12;

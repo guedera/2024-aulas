@@ -1,0 +1,62 @@
+// ---------------------------------  
+// ---------------------------------
+
+function Main.main 0
+
+pop temp 2
+pop temp 1
+pop temp 0
+
+push constant 0
+pop temp 3
+
+//contador pra cond
+push constant 0
+pop temp 4
+
+push temp 0
+pop temp 5
+
+label LOOP_START
+
+//if i < n: continua loop
+push temp 4
+push temp 1
+lt
+if-goto LOOP_BODY
+
+//!if sai do loop
+goto LOOP_END
+
+label LOOP_BODY
+
+//soma tot
+push temp 3
+push temp 5 
+add
+pop temp 3
+
+push temp 5
+push temp 2
+add
+pop temp 5
+
+//add 1 pro i
+push temp 4    //i
+push constant 1
+add
+pop temp 4     //att i
+
+//volta pro comeco do loop
+goto LOOP_START
+
+label LOOP_END
+
+push temp 3
+
+
+// nao deve tirar isso!
+label while2
+    goto while2
+
+//passou no teste!!!

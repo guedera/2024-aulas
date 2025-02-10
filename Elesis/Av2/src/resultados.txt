@@ -1,0 +1,12 @@
+Escreva as saídas esperadas em o_result para as condições indicadas na tabela:
+
+
+| i_a                            |  i_b                 | i_alu_ctrl | o_result    |
+| :--------:                     | :--:                 |  :--:      |  :--:       |
+|    x"0000000000000123"         |  x"0000000000000123" | "10"       | x"0000000000000123"    |
+|    x"0000000000000123"         |  x"0000000000000123" | "11"       | x"0000000000000123"    |
+|    x"0000000000000123"         |  x"0000000000000123" | "01"       | x"0000000000000000"    |
+|    x"0000000000000123"         |  x"0000000000000123" | "00"       | x"0000000000000246"    |
+
+Qual seria a o_carry_out esperado para o último caso?
+o_carry_out esperado para o último deveria ser 0.

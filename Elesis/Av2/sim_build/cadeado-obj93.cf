@@ -1,0 +1,4 @@
+v 4
+file / "/home/guedes/Documents/insper/elesis/provaPI/ai-av2-guedera/src/cadeado.vhd" "eaa49b1e2adea6da8fc37b6830e91cd3521e4f29" "20240927124849.556":
+  entity cadeado at 1( 0) + 0 on 11;
+  architecture rtl of cadeado at 18( 398) + 0 on 12;

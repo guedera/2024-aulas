@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1727435177" />
+    <testcase name="tb_cadeado" classname="av2_cocotb" file="/home/guedes/Documents/insper/elesis/provaPI/ai-av2-guedera/av2_cocotb.py" lineno="27" time="0.0015330314636230469" sim_time_ns="7.500001" ratio_time="4892.268148414308">
+      <failure message="Test failed with RANDOM_SEED=1727435177" />
+    </testcase>
+  </testsuite>
+</testsuites>

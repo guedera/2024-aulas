@@ -1,0 +1,20 @@
+1. Determine qual seria o vetor de 18 bits a ser fornecido para a _ControlUnit_ para que o CPU realize uma operação "addw (%A), (%D), %A".
+A instrução "addw (%A), (%D), %A" em um formato de 18 bits seria representada por 111110110001000000
+
+
+
+2. Determine qual seria o vetor de 18 bits a ser fornecido para a _ControlUnit_ para que o CPU realize uma operação "orw %D, (%A), (%D)".
+
+
+
+
+3. Seria possível alterar essa CPU sem mudar o tamanho dos bits de instrução para que um valor seja carregado diretamente em %D a partir da instrução? Em caso afirmativo, explique como seria feito. Em caso negativo, explique o porquê.
+
+
+
+
+4. Seria possível realizar diretamente a operação "andw %A,  (%A), (%D)" nessa CPU? Justifique.
+
+
+
+
